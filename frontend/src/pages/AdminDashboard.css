@@ -1,0 +1,105 @@
+/* Full page center */
+.navbar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Title styling */
+.brand {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #333;
+  text-shadow: 2px 2px 10px rgba(255, 111, 97, 0.4);
+}
+
+/* Searchbar row */
+.searchbar {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.25);
+  padding: 20px;
+  border-radius: 40px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Input */
+.search-input {
+  padding: 12px 18px;
+  border-radius: 25px;
+  border: 2px solid transparent;
+  outline: none;
+  font-size: 1rem;
+  transition: 0.3s;
+  background: #fff;
+}
+
+.search-input:focus {
+  border-color: #ff3b2e;
+  box-shadow: 0 0 12px rgba(255, 111, 97, 0.6);
+}
+
+/* Buttons base */
+.btn {
+  padding: 12px 22px;
+  border-radius: 30px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.4s ease;
+  color: #fff;
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Shine animation */
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: skewX(-20deg);
+  transition: left 0.6s;
+}
+
+.btn:hover::before {
+  left: 100%;
+}
+
+/* Unique button colors */
+.search-btn {
+  background: linear-gradient(135deg, #ff6f61, #ff3b2e);
+}
+.search-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 20px rgba(255, 60, 46, 0.5);
+}
+
+/* ✨ Unique Add button with luxury purple-pink gradient */
+.add-btn {
+  background: linear-gradient(135deg, #8e2de2, #ff6fd8);
+}
+.add-btn:hover {
+  transform: rotate(-3deg) scale(1.05);
+  box-shadow: 0 6px 20px rgba(142, 45, 226, 0.6);
+}
+
+/* Update button */
+.update-btn {
+  background: linear-gradient(135deg, #2196f3, #0d47a1);
+}
+.update-btn:hover {
+  transform: rotate(3deg) scale(1.05);
+  box-shadow: 0 6px 20px rgba(13, 71, 161, 0.5);
+}

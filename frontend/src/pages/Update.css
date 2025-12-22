@@ -1,0 +1,98 @@
+/* Page background */
+.update-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f6f9; /* soft neutral background */
+  font-family: "Poppins", sans-serif;
+}
+
+/* Card box */
+.update-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.update-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #2c3e50; /* dark slate */
+}
+
+/* Form groups */
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+
+.update-form input,
+.update-form textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.update-form input:focus,
+.update-form textarea:focus {
+  border-color: #3498db; /* soft blue highlight */
+  box-shadow: 0 0 6px rgba(52, 152, 219, 0.4);
+  outline: none;
+}
+
+/* Button */
+.update-btn {
+  width: 100%;
+  padding: 0.9rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #3498db; /* primary blue */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-top: 1rem;
+}
+
+.update-btn:hover {
+  background-color: #2980b9; /* darker blue */
+  transform: scale(1.03);
+}
+
+.update-btn:active {
+  transform: scale(0.97);
+}
+
+/* Error alert */
+.alert.error {
+  background-color: #ffe6e6;
+  border-left: 4px solid #e74c3c;
+  color: #c0392b;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
+
+/* Loading text */
+.loading {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #555;
+}

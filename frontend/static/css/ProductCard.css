@@ -1,0 +1,130 @@
+body {
+          background-color: #fafafa;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+        }
+        
+        .container {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 0 1rem;
+        }
+        .page-title {
+          font-size: 1.75rem;
+          font-weight: 300;
+          letter-spacing: -0.5px;
+          color: #1a1a1a;
+          margin: 3rem 0 2.5rem;
+          padding-bottom: 1rem;
+          border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .alert {
+          border: none;
+          border-left: 3px solid #dc3545;
+          border-radius: 0;
+          background-color: #fff5f5;
+          color: #666;
+          font-size: 0.9rem;
+          padding: 1rem;
+          margin-bottom: 2rem;
+        }
+        
+        .product-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+          gap: 2rem;
+          margin-bottom: 3rem;
+        }
+        
+        .product-card {
+          border: 1px solid #e8e8e8;
+          border-radius: 2px;
+          background: #ffffff;
+          transition: all 0.2s ease;
+          overflow: hidden;
+        }
+        
+        .product-card:hover {
+          border-color: #d0d0d0;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+        }
+        
+        .product-image {
+          width: 100%;
+          height: 240px;
+          object-fit: cover;
+          border-bottom: 1px solid #e8e8e8;
+        }
+        
+        .product-body {
+          padding: 1.25rem;
+        }
+        
+        .product-title {
+          font-size: 1rem;
+          font-weight: 500;
+          color: #1a1a1a;
+          margin: 0 0 0.5rem;
+          line-height: 1.4;
+        }
+        
+        .product-description {
+          font-size: 0.875rem;
+          color: #757575;
+          line-height: 1.5;
+          margin: 0 0 0.75rem;
+        }
+        
+        .product-price {
+          font-size: 1.125rem;
+          font-weight: 400;
+          color: #1a1a1a;
+          margin: 0;
+        }
+        
+        .no-products {
+          text-align: center;
+          color: #999;
+          font-size: 0.95rem;
+          padding: 3rem 0;
+          font-weight: 300;
+        }
+        .delete-btn {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #ff6b6b, #ff1010); /* red gradient */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+  box-shadow: 0 4px 12px rgba(255, 16, 16, 0.3);
+}
+
+.delete-btn:hover {
+  background: linear-gradient(135deg, #e1cb24, #ddcb3d);
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(229, 208, 47, 0.4);
+}
+
+.delete-btn:active {
+  transform: scale(0.95);
+}
+
+          
+        @media (max-width: 768px) {
+          .product-grid {
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+          }
+          
+          .page-title {
+            font-size: 1.5rem;
+            margin: 2rem 0 1.5rem;
+          }
+        }
