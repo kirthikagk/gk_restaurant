@@ -16,7 +16,7 @@ const AddProduct = () => {
       formData.append("image", image);
       formData.append("price", price);
 
-      const res = await fetch("/api/backend/add", {
+      const res = await fetch("https://gk-restaurant-1.onrender.com/api/backend/add", {
         method: "POST",
         body: formData,
       });
